@@ -1,11 +1,21 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import {Navbar, Sidebar, Footer} from './components'
-import {Home, About, Products, SingleProduct, Checkout, Cart, Error} from "./pages"
+import {
+  Home,
+  About,
+  Products,
+  SingleProduct,
+  Checkout,
+  Cart,
+  Error,
+  Auth,
+} from "./pages"
 import PrivateRoute from "./pages/PrivateRoute";
 
 function App() {
   return (
+    <Auth>
     <Router>
       <Navbar/>
       <Sidebar/>
@@ -32,6 +42,7 @@ function App() {
       </Switch>
       <Footer/>
     </Router>
+    </Auth>
   );
 }
 
