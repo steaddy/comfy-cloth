@@ -23,14 +23,6 @@ const CartButtons = () => {
         <span className="cart-value">{total_items}</span>
       </span>
     </Link>
-
-    {
-      console.log(myUser)
-    }
-    {
-      myUser ? console.log('You are in') : console.log('You are out')
-    }
-
     {myUser ? (
       <button
         onClick={(params) => {

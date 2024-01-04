@@ -19,9 +19,6 @@ export const UserProvider = ({ children }) => {
     } else {
       setMyUser(false);
     }
-    console.log('User: ' + user)
-    console.log('IsAuthenticated: ' + isAuthenticated)
-    console.log('IsLoading: ' + isLoading)
   },[isAuthenticated])
 
   return (
